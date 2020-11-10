@@ -15,8 +15,9 @@
         <header id="top">
             <nav id="menu-principal">
                 <ul>
-                    <li><a href="#">Portfolio</a></li>
-                    <li><a href="#">Contact</a></li>
+                    <!-- ancres/liens vers un identifiant dans cette page -->
+                    <li><a href="#portfolio" class="js-scrollTo">Portfolio</a></li>
+                    <li><a href="#contact" class="js-scrollTo">Contact</a></li>
                 </ul>
             </nav>
             <img src="img/logo_mahe_neel.svg" alt="Mahé NEEL logo"/>
@@ -66,8 +67,28 @@
               
           </section>
           
+          <section id="contact">
+              <h4>Travaillons ensemble !</h4>
+                <h5>Mahé NEEL</h5>
+              <a href="mailto:%6da&#104;%65&#64;&#115;%61&#112;&#105;&#107;&#100;e%73&#105;&#103;n%2e%63o%6d">mahe&#64;sapikdesign.com</a>
+          </section>
+          
           
         
         </main>
+        
+        <!-- Smooth scroll -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>
+            $(document).ready(function() {
+                $('.js-scrollTo').on('click', function() { // Au clic sur un élément
+                    var page = $(this).attr('href'); // Page cible
+                    var speed = 750; // Durée de l'animation (en ms)
+                    $('html, body').animate( { scrollTop: $(page).offset().top }, speed ); // Go
+                    return false;
+                });
+            });
+        </script>
+
     </body>
 </html>
