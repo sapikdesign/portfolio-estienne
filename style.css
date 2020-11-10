@@ -28,6 +28,18 @@ img {
     background-size: cover; /* l'image s'ajuste pour remplir tout le bloc */
     padding: 30px 15px; /* haut+bas droite+gauche*/
     text-align: center; /* centre horizontalement les éléments */
+    margin-bottom: 100px;
+}
+
+#top img {
+    max-width: 600px;
+    margin-top:30vh;
+}
+
+#top h1 {
+    font-size: 1.8rem;
+    font-weight: 300;
+    text-transform: uppercase;
 }
 
 #menu-principal ul {
@@ -49,8 +61,22 @@ img {
     font-weight: 700; /* graisse */
 }
 
-#portfolio {
+#menu-principal a:hover,
+#menu-principal a:focus {
+    color: deeppink;
+}
+
+h2.portfolio-title {
+    text-align: center;
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+#portfolio,
+#competences {
     display: flex;
+    margin-bottom: 100px;
 }
 
 .projet {
@@ -58,5 +84,26 @@ img {
     text-align: center;
     padding: 15px;
 }
+
+#competences {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comp {
+    flex-basis: 33.33333%;
+    text-align: center;
+    padding: 0 30px;
+}
+
+#competences h3 {
+    font-size: 2em;
+    color: deeppink;
+    font-weight: 300;
+    text-transform: uppercase;
+}
+
+ 
 
 
